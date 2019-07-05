@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <!-- About Section -->
+    <section class="page-section bg-primary" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">만다라트 차트란?</h2>
+            <hr class="divider light my-4">
+            <p class="text-white-50 mb-4">목표를 달성하기 위한 계획표 혹은 차트 <br>1. 중앙의 사각형에 이루고자 하는 핵심목표 혹은 큰 카테고리를 적고 <br>2. 그 다음 중심의 주변칸에 세부목표 - 하위 카테고리 -를 적은 후
+  <br>3. 세부목표 - 하위 카테고리 - 를 둘러싸고 있는 작은 9칸에 실행방안을 적습니다.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">99% 서비스는?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Services Section -->
+    <section class="page-section" id="services">
+      <div class="container">
+        <h2 class="text-center mt-0">우리의 서비스는</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+              <h3 class="h4 mb-2">다양한 아이디어</h3>
+              <p class="text-muted mb-0">주제를 결정하고, 이뤄내고, 분류하는 다양한 아이디어를 보여주세요!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+              <h3 class="h4 mb-2">인터넷이 된다면</h3>
+              <p class="text-muted mb-0">제작하고, 업로드하고, 수정하기 쉽습니다!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+              <h3 class="h4 mb-2">다른 사람들과 함께</h3>
+              <p class="text-muted mb-0">만든 차트를 자랑하고, 공유하고, 참고할 수 있습니다!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+              <h3 class="h4 mb-2">차트를 사용할수록</h3>
+              <p class="text-muted mb-0">당신의 선호, 지향, 목표를 구체적으로 알 수 있습니다!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/1.jpg' %}"}>
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/2.jpg'%}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/2.jpg'%}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/3.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/3.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/4.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/4.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/5.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/5.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/6.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/6.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/1.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/2.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/2.jpg' %}" alt="">
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/3.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/3.jpg' %}" alt="">
+              <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Call to Action Section -->
+    <section class="page-section bg-dark text-white"  id="make">
+      <div class="container text-center">
+        <h2 class="mb-4">만다라트 차트 만들러 가기!</h2>
+        <a class="btn btn-light btn-xl" href="{% url 'new' %}">차트 만들기</a>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="mt-0">더 많은 기능들을 이용하세요!</h2>
+            <hr class="divider my-4">
+            <p class="text-muted mb-5">회원가입 하시거나 로그인 하시는 것으로 더 많은 서비스를 이용하실 수 있습니다!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-user-plus fa-3x mb-3 text-muted"></i>
+            <a class="d-block" href="{% url 'signup' %}">회원가입</a>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-user fa-3x mb-3 text-muted"></i>
+            <!-- Make sure to change the email address in anchor text AND the link below! -->
+            <a class="d-block" href="{% url 'loginsignup' %}">로그인</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+{% endblock %}

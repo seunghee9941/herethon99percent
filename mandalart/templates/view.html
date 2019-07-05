@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block cssstyle %}
+<style>
+     td { background-color:white; width:70px; height:70px; text-align:center; border:1px solid gray; }
+     #subject { width:70px; height:70px; text-align:center; display:table-cell; vertical-align:middle }
+            .sub{ background-color:#f4623a;}
+            .title {background-color:#d6370c;}
+            #subject:hover{background-color:#f4623ab0; border-color: rgb(127, 128, 94);}
+</style>
+{% endblock %}
+    {% block content %}
+    <section class="page-section bg-dark text-white"  id="make">
+    <div class="container text-center">
+    <form name="man" style="width: 600px; margin:0 auto">
+    <h2 class="mb-4">{{views.title}}</h2>
+    <table>
+        <tr>
+            <td id="subject">{{views.subject1_1}}</td>
+            <td id="subject">{{views.subject1_2}}</td>
+            <td id="subject">{{views.subject1_3}}</td>
+            <td id="subject">{{views.subject2_1}}</td>
+            <td id="subject">{{views.subject2_2}}</td>
+            <td id="subject">{{views.subject2_3}}</td>
+            <td id="subject">{{views.subject3_1}}</td>
+            <td id="subject">{{views.subject3_2}}</td>
+            <td id="subject">{{views.subject3_3}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject1_4}}</td>
+            <td id="subject" class="sub">{{views.subject1}}</td>
+            <td id="subject">{{views.subject1_5}}</td>
+            <td id="subject">{{views.subject2_4}}</td>
+            <td id="subject" class="sub">{{views.subject2}}</td>
+            <td id="subject">{{views.subject2_5}}</td>
+            <td id="subject">{{views.subject3_4}}</td>
+            <td id="subject" class="sub">{{views.subject3}}</td>
+            <td id="subject">{{views.subject3_5}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject1_6}}</td>
+            <td id="subject">{{views.subject1_7}}</td>
+            <td id="subject">{{views.subject1_8}}</td>
+            <td id="subject">{{views.subject2_6}}</td>
+            <td id="subject">{{views.subject2_7}}</td>
+            <td id="subject">{{views.subject2_8}}</td>
+            <td id="subject">{{views.subject3_6}}</td>
+            <td id="subject">{{views.subject3_7}}</td>
+            <td id="subject">{{views.subject3_8}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject4_1}}</td>
+            <td id="subject">{{views.subject4_2}}</td>
+            <td id="subject">{{views.subject4_3}}</td>
+            <td id="subject">{{views.subject1}}</td>
+            <td id="subject">{{views.subject2}}</td>
+            <td id="subject">{{views.subject3}}</td>
+            <td id="subject">{{views.subject5_1}}</td>
+            <td id="subject">{{views.subject5_2}}</td>
+            <td id="subject">{{views.subject5_3}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject4_4}}</td>
+            <td id="subject" class="sub">{{views.subject4}}</td>
+            <td id="subject">{{views.subject4_5}}</td>
+            <td id="subject">{{views.subject4}}</td>
+            <td id="subject" class="title">{{views.title}}</td>
+            <td id="subject">{{views.subject5}}</td>
+            <td id="subject">{{views.subject5_4}}</td>
+            <td id="subject" class="sub">{{views.subject5}}</td>
+            <td id="subject">{{views.subject5_5}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject4_6}}</td>
+            <td id="subject">{{views.subject4_7}}</td>
+            <td id="subject">{{views.subject4_8}}</td>
+            <td id="subject">{{views.subject6}}</td>
+            <td id="subject">{{views.subject7}}</td>
+            <td id="subject">{{views.subject8}}</td>
+            <td id="subject">{{views.subject5_6}}</td>
+            <td id="subject">{{views.subject5_7}}</td>
+            <td id="subject">{{views.subject5_8}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject6_1}}</td>
+            <td id="subject">{{views.subject6_2}}</td>
+            <td id="subject">{{views.subject6_3}}</td>
+            <td id="subject">{{views.subject7_1}}</td>
+            <td id="subject">{{views.subject7_2}}</td>
+            <td id="subject">{{views.subject7_3}}</td>
+            <td id="subject">{{views.subject8_1}}</td>
+            <td id="subject">{{views.subject8_2}}</td>
+            <td id="subject">{{views.subject8_3}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject6_4}}</td>
+            <td id="subject" class="sub">{{views.subject6}}</td>
+            <td id="subject">{{views.subject6_5}}</td>
+            <td id="subject">{{views.subject7_4}}</td>
+            <td id="subject" class="sub">{{views.subject7}}</td>
+            <td id="subject">{{views.subject7_5}}</td>
+            <td id="subject">{{views.subject8_4}}</td>
+            <td id="subject" class="sub">{{views.subject8}}</td>
+            <td id="subject">{{views.subject8_5}}</td>
+        </tr>
+        <tr>
+            <td id="subject">{{views.subject6_6}}</td>
+            <td id="subject">{{views.subject6_7}}</td>
+            <td id="subject">{{views.subject6_8}}</td>
+            <td id="subject">{{views.subject7_6}}</td>
+            <td id="subject">{{views.subject7_7}}</td>
+            <td id="subject">{{views.subject7_8}}</td>
+            <td id="subject">{{views.subject8_6}}</td>
+            <td id="subject">{{views.subject8_7}}</td>
+            <td id="subject">{{views.subject8_8}}</td>
+        </tr>
+    </table>
+    </form>
+</div>
+</section>
+    {% endblock %}

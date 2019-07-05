@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block stylelink %}
+<link href='https://fonts.googleapis.com/css?family=Bellefair' rel='stylesheet'>
+{% endblock %}
+
+{% block cssstyle %}
+<style>
+body {
+    font-family: 'Bellefair';font-size: 24px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+{% if error %}
+{{ error }}
+<br>
+{% endif %}
+<section class="page-section">
+<div class="container">
+    <br>
+    <h1 style="font-family : Bellefair">Sign Up!</h1>
+    <br>
+    <form class="form-group"  method="POST" action="{% url 'signup' %}">
+    {% csrf_token %}
+        <div class="form-group col-md-4">
+        <label for="exampleUsername">Username</label>
+        <input name="username" id="exampleUsername" type="text" class="form-control" placeholder="Username" value="">
+        <br>
+        <label for="examplePassword">Password</label>
+        <input name="password1" id="examplePassword1" type="password" class="form-control" placeholder="Password" value="">
+        <br>
+        <label for="examplePassword">Confirm Password</label>
+        <input name="password2" id="examplePassword2" type="password" class="form-control" placeholder="Confirm Password" value="">
+        <br>
+        <br>
+        <input class="btn btn-dark" type="submit" value="Sign Up!" style="font-family : Bellefair">
+        </div>
+    </form>
+<br>
+</div>
+</section>
+
+{% endblock %}

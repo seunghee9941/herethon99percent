@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block cssstyle %}
+        <style>
+            #subject { width:70px; height:70px; text-align:center; display:table-cell; vertical-align:middle }
+            .sub{ background-color:#f4623a; color:white}
+        </style>
+ {% endblock %}
+ {% block content %}
+ <section class="page-section bg-dark text-white"  id="make">
+ <div class="container text-center">
+        <h2 class="mb-4">만다라트 차트 만들기</h2>
+        <p>만다라트 차트를 만들어봅시다. 빈칸을 입력해주세요.</p>
+        <div class="center" style="width: 600px; margin:0 auto">
+    <form name="mandal" action="{% url 'create' %}">
+        <table>
+            <tr>
+                <td><input type="text" id="subject" name="subject1_1"></td>
+                <td><input type="text" id="subject" name="subject1_2"></td>
+                <td><input type="text" id="subject" name="subject1_3"></td>
+                <td><input type="text" id="subject" name="subject2_1"></td>
+                <td><input type="text" id="subject" name="subject2_2"></td>
+                <td><input type="text" id="subject" name="subject2_3"></td>
+                <td><input type="text" id="subject" name="subject3_1"></td>
+                <td><input type="text" id="subject" name="subject3_2"></td>
+                <td><input type="text" id="subject" name="subject3_3"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject1_4"></td>
+                <td><div id="subject" class="sub">1</div></td>
+                <td><input type="text" id="subject" name="subject1_5"></td>
+                <td><input type="text" id="subject" name="subject2_4"></td>
+                <td><div id="subject" class="sub">2</div></td>
+                <td><input type="text" id="subject" name="subject2_5"></td>
+                <td><input type="text" id="subject" name="subject3_4"></td>
+                <td><div id="subject" class="sub">3</div></td>
+                <td><input type="text" id="subject" name="subject3_5"></td> 
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject1_6"></td>
+                <td><input type="text" id="subject" name="subject1_7"></td>
+                <td><input type="text" id="subject" name="subject1_8"></td>
+                <td><input type="text" id="subject" name="subject2_6"></td>
+                <td><input type="text" id="subject" name="subject2_7"></td>
+                <td><input type="text" id="subject" name="subject2_8"></td>
+                <td><input type="text" id="subject" name="subject3_6"></td>
+                <td><input type="text" id="subject" name="subject3_7"></td>
+                <td><input type="text" id="subject" name="subject3_8"></td> 
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject4_1"></td>
+                <td><input type="text" id="subject" name="subject4_2"></td>
+                <td><input type="text" id="subject" name="subject4_3"></td>
+                <td><input type="text" id="subject" name="subject1" placeholder="1"></td>
+                <td><input type="text" id="subject" name="subject2" placeholder="2"></td>
+                <td><input type="text" id="subject" name="subject3" placeholder="3"></td>
+                <td><input type="text" id="subject" name="subject5_1"></td>
+                <td><input type="text" id="subject" name="subject5_2"></td>
+                <td><input type="text" id="subject" name="subject5_3"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject4_4"></td>
+                <td><div id="subject" class="sub">4</div></td>
+                <td><input type="text" id="subject" name="subject4_5"></td>
+                <td><input type="text" id="subject" name="subject4" placeholder="4"></td>
+                <td><input type="text" id="subject" name="title" placeholder="제목"></td>
+                <td><input type="text" id="subject" name="subject5" placeholder="5"></td>
+                <td><input type="text" id="subject" name="subject5_4"></td>
+                <td><div id="subject" class="sub">5</div></td>
+                <td><input type="text" id="subject" name="subject5_5"></td> 
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject4_6"></td>
+                <td><input type="text" id="subject" name="subject4_7"></td>
+                <td><input type="text" id="subject" name="subject4_8"></td>
+                <td><input type="text" id="subject" name="subject6" placeholder="6"></td>
+                <td><input type="text" id="subject" name="subject7" placeholder="7"></td>
+                <td><input type="text" id="subject" name="subject8" placeholder="8"></td>
+                <td><input type="text" id="subject" name="subject5_6"></td>
+                <td><input type="text" id="subject" name="subject5_7"></td>
+                <td><input type="text" id="subject" name="subject5_8"></td> 
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject6_1"></td>
+                <td><input type="text" id="subject" name="subject6_2"></td>
+                <td><input type="text" id="subject" name="subject6_3"></td>
+                <td><input type="text" id="subject" name="subject7_1"></td>
+                <td><input type="text" id="subject" name="subject7_2"></td>
+                <td><input type="text" id="subject" name="subject7_3"></td>
+                <td><input type="text" id="subject" name="subject8_1"></td>
+                <td><input type="text" id="subject" name="subject8_2"></td>
+                <td><input type="text" id="subject" name="subject8_3"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject6_4"></td>
+                <td><div id="subject" class="sub">6</div></td>
+                <td><input type="text" id="subject" name="subject6_5"></td>
+                <td><input type="text" id="subject" name="subject7_4"></td>
+                <td><div id="subject" class="sub">7</div></td>
+                <td><input type="text" id="subject" name="subject7_5"></td>
+                <td><input type="text" id="subject" name="subject8_4"></td>
+                <td><div id="subject" class="sub">8</div></td>
+                <td><input type="text" id="subject" name="subject8_5"></td> 
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject6_6"></td>
+                <td><input type="text" id="subject" name="subject6_7"></td>
+                <td><input type="text" id="subject" name="subject6_8"></td>
+                <td><input type="text" id="subject" name="subject7_6"></td>
+                <td><input type="text" id="subject" name="subject7_7"></td>
+                <td><input type="text" id="subject" name="subject7_8"></td>
+                <td><input type="text" id="subject" name="subject8_6"></td>
+                <td><input type="text" id="subject" name="subject8_7"></td>
+                <td><input type="text" id="subject" name="subject8_8"></td> 
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="만들기">
+    </form>
+</div>
+</div>
+</section>
+{% endblock %}
