@@ -1,0 +1,1 @@
+web: gunicorn percent99.wdgi --log-file -
